@@ -1,11 +1,12 @@
-#include <iostream>
-void hello() {
+int array_sum(int array[], int n) {
+    int sum=0;
 
-    // std is a namespace
-    // Think about it as a declarative region insidw which things are defined.
-    // std::cout << "abc\n"; this is equivalent to print("abc") with \n for a new line.
-    // cout is defined in the namespace std
-    // use cout to print "Object-Oriented Programming" followed by a new line.
-
-    std::cout << "Object-Oriented Programming\n";
+    if (n<0) {
+        return sum;
+    }   
+    
+    for (int i=0; i<n; i++) {
+        sum=sum+array[i];
+    }
+    return sum;
 }
