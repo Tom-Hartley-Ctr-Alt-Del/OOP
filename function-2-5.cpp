@@ -1,10 +1,13 @@
 bool is_descending(int array[], int n) {
-    bool is_descending=true;
+    if (n<=0) {
+        return false;
+    }
+    
     for (int i=1; i<n; i++) {
-        if (array[i]<=array[i-1]) {
-            is_descending=false;
+        if (array[i]>array[i-1]) {
+            return false;
             break;
         }
     }
-    return is_descending;
+    return true;
 }
