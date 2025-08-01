@@ -1,12 +1,9 @@
-int array_sum(int array[], int n) {
-    int sum=0;
+#include <iostream>
 
-    if (n<0) {
-        return sum;
-    }   
-    
-    for (int i=0; i<n; i++) {
-        sum=sum+array[i];
-    }
-    return sum;
+extern int array_sum(int[], int);
+
+int main() {
+    int array[3] = {1,2,3};
+    std::cout << "The total of all numbers in the array is " << array_sum(array, 3) << std::endl;
+    return 0;
 }

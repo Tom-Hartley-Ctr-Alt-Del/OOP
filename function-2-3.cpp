@@ -12,8 +12,9 @@ void two_five_nine(int array[], int n) {
             case 5:
             fives++;
             break;
-            default:
+            case 9:
             nines++;
+            default:
             break;
         }
     }

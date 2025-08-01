@@ -5,11 +5,11 @@ void print_pass_fail(char grade) {
     case 'A':
     case 'B':
     case 'C':
-        std::cout << "The student passed \n";
+        std::cout << "Pass\n";
         break;
     case 'E':
     case 'F':
-        std::cout << "The student failed \n";
+        std::cout << "Fail\n";
         break;
     default:
         std::cout << "Nothing\n";
