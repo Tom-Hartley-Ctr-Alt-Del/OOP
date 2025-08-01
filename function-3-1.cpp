@@ -10,8 +10,8 @@ bool is_fanarray(int array[], int n) {
         }
     }
     
-    for (int j=0; j<mid-1; j++) {
-        if (array[j] > array[j+1]) {
+    for (int j=1; j<mid; j++) {
+        if (array[j-1] > array[j]) {
             return false;
         }
     }
