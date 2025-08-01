@@ -1,10 +1,10 @@
-bool is_ascending(int array[], int n) {
-    bool is_ascending=true;
+bool is_descending(int array[], int n) {
+    bool is_descending=true;
     for (int i=1; i<n; i++) {
         if (array[i]<=array[i-1]) {
-            is_ascending=false;
+            is_descending=false;
             break;
         }
     }
-    return is_ascending;
+    return is_descending;
 }
