@@ -1,4 +1,4 @@
-double average(int array[], int n) {
+double average_mean(int array[], int n) {
     if (n<0) {
         return 0.0;
     }
@@ -7,7 +7,7 @@ double average(int array[], int n) {
         sum=sum+array[i];
     }
 
-    double average=(double)sum/n;
+    double average_mean=(double)sum/n;
 
-    return average;
+    return average_mean;
 }
