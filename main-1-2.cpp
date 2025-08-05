@@ -1,9 +1,13 @@
-#include <iostream>
+double array_mean(int array[], int n) {
+    if (n<0) {
+        return 0.0;
+    }
+    int sum=0;
+    for (int i=0; i<n; i++) {
+        sum=sum+array[i];
+    }
 
-extern double array_mean(int[], int);
+    double array_mean=(double)sum/n;
 
-int main() {
-    int array[5]={1,2,3,4,5};
-    std::cout << "The average value in the array is: " << array_mean(array, 5) << std::endl;
-    return 0;
+    return array_mean;
 }

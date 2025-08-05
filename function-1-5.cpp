@@ -1,12 +1,9 @@
-int count_evens(int number) {
-    int count_evens=0;
-    if (number<0) {
-        return count_evens;
-    }
-    for (int i=0; i<number; i++) {
-        if (i%2==0) {
-            count_evens++;
-        }
-    }
-    return count_evens;
+#include <iostream>
+
+extern int count_evens(int);
+
+int main(){
+    int number=10;
+    std::cout << "The even numbers between 1 and " << number << " is " << count_evens(number) << std::endl; 
+    return 0;
 }
