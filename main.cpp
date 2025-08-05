@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-extern int binaryConverter(int);
+extern void binaryConverter(int);
 
 int main() {
     int base10Value=50;
