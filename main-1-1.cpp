@@ -1,9 +1,10 @@
 #include <iostream>
-
-extern int array_sum(int[], int);
+using namespace std;
+extern int sum_diagonal(int *array);
 
 int main() {
-    int array[3] = {1,2,3};
-    std::cout << "The total of all numbers in the array is " << array_sum(array, 3) << std::endl;
+    int array[4][4] = {{1,2,3,4}, {1,2,3,4}, {1,2,3,4}, {1,2,3,4}};
+    int *ptr=&array[0][0];
+    cout << "The sum of all numbers along the main diagonal is: " << sum_diagonal(ptr) << endl;
     return 0;
 }

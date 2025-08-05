@@ -1,9 +1,22 @@
 #include <iostream>
+using namespace std;
 
-extern double array_mean(int[], int);
+extern int is_identity(int *array) ;
 
 int main() {
-    int array[5]={1,2,3,4,5};
-    std::cout << "The average value in the array is: " << array_mean(array, 5) << std::endl;
+    int array[10][10] = {
+    {1,0,0,0,0,0,0,0,0,0},
+    {0,1,0,0,0,0,0,0,0,0},
+    {0,0,1,0,0,0,0,0,0,0},
+    {0,0,0,1,0,0,0,0,0,0},
+    {0,0,0,0,1,0,0,0,0,0},
+    {0,0,0,0,0,1,0,0,0,0},
+    {0,0,0,0,0,0,1,0,0,0},
+    {0,0,0,0,0,0,0,1,0,0},
+    {0,0,0,0,0,0,0,0,1,0},
+    {0,0,0,0,0,0,0,0,0,1}};
+    
+    int *ptr=&array[0][0];
+    cout << is_identity(ptr) << endl;
     return 0;
 }

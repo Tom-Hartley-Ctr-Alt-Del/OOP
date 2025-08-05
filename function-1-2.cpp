@@ -1,13 +1,10 @@
-double array_mean(int array[], int n) {
-    if (n<0) {
-        return 0.0;
+int is_identity(int *array) {
+    for (int i=0; i<10; i++) {
+        for (int j=0; j<10; j++) {
+            if ((i==j && array[i*10+j]!=1) || (i!=j && array[i*10+j])) {
+                return 0;
+            }          
+        }
     }
-    int sum=0;
-    for (int i=0; i<n; i++) {
-        sum=sum+array[i];
-    }
-
-    double array_mean=(double)sum/n;
-
-    return array_mean;
+    return 1;
 }

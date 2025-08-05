@@ -1,10 +1,11 @@
-int sum_two_arrays(int array[], int secondArray[], int n) {
-    int sum_array1=0;
-    int sum_array2=0;
-    for (int i=0; i<n; i++) {
-        sum_array1=sum_array1+array[i];
-        sum_array2=sum_array2+secondArray[i];
+#include <iostream>
+using namespace std;
+
+void print_scaled(int *array, int) {
+    for (int i=1; i<=3; i++) {
+        for (int j=0; j<3; j++) {
+            cout << (array[(i-1)*3+j]*3) << " ";
+        }
+        cout << endl;
     }
-    int sum_two_arrays=sum_array1+sum_array2;
-    return sum_two_arrays;
 }

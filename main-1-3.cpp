@@ -1,10 +1,9 @@
 #include <iostream>
-
-extern int num_count(int[], int, int);
+extern void count_digits(int *array);
 
 int main() {
-    int array[5]= {1,2,3,2,0};
-    int desired_number=2;
-    std::cout << "The values in the array equal to " << desired_number << " are " << num_count(array, -1, 2) << std::endl;
+    int array[4][4]={{1,2,3,4},{1,2,3,4}, {1,2,3,4}, {1,2,3,4}};
+    int *ptr=&array[0][0];
+    count_digits(ptr);
     return 0;
 }
