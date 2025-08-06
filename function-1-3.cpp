@@ -12,25 +12,25 @@ void count_digits(int array[4][4]) {
     for (int l=0; l<10; l++) {
         switch (l) {
         case 0:
-        cout << digits[l] << ":number of zeros"; break;
+        cout << "0:" << digits[l]; break;
         case 1:
-        cout << digits[l] << ":number of ones"; break;
+        cout << "1:" << digits[l]; break;
         case 2:
-        cout << digits[l] << ":number of twos"; break;
+        cout << "2:" << digits[l]; break;
         case 3:            
-        cout << digits[l] << ":number of threes"; break;
+        cout << "3:" << digits[l]; break;
         case 4:
-        cout << digits[l] << ":number of fours"; break;
+        cout << "4:" << digits[l]; break;
         case 5:            
-        cout << digits[l] << ":number of fives"; break;
+        cout << "5:" << digits[l]; break;
         case 6:
-        cout << digits[l] << ":numbner of sixes"; break;
+        cout << "6:" << digits[l]; break;
         case 7:            
-        cout << digits[l] << ":number of sevens"; break;
+        cout << "7:" << digits[l]; break;
         case 8:
-        cout << digits[l] << ":number of eights"; break;
+        cout << "8:" << digits[l]; break;
         case 9:
-        cout << digits[l] << ":number of nines"; break;
+        cout << "9:" << digits[l]; break;
         }
         cout << ";";
     }
