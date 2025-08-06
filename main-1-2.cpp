@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-extern int is_identity(int *array);
+extern int is_identity(int array[10][10]);
 
 int main() {
     int array[10][10] = {
@@ -17,6 +17,6 @@ int main() {
         {0,0,0,0,0,0,0,0,0,1}
     };
     int *ptr=&array[0][0];
-    cout << is_identity(ptr) << endl;
+    cout << is_identity(array) << endl;
     return 0;
 }
