@@ -16,7 +16,6 @@ int main() {
         {0,0,0,0,0,0,0,0,1,0},
         {0,0,0,0,0,0,0,0,0,1}
     };
-    int *ptr=&array[0][0];
     cout << is_identity(array) << endl;
     return 0;
 }
