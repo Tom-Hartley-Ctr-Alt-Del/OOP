@@ -2,8 +2,6 @@
 #include <iostream>
 using namespace std;
 
-extern void changeValue(double*); void printArray(double* arrayPtr, int n); double* dynamicArray(int size, double M); double arrayMax(double* arrayValues, int m);
-
 int main() {
     double doubleValue=0.0;
     char firstInitial='s';
