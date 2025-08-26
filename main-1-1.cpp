@@ -1,16 +1,12 @@
 #include <iostream>
-#include <string>
-#include "Person.h"
-using namespace std;
+#include "Musician.h"
 
-extern Person* createPersonArray(int);
+int main() {
+    Musician m1;
+    std::cout << "Default instrument: " << m1.get_instrument() << ", Default experience: " << m1.get_experience() << std::endl;
 
-int main(void) {
-    int people=3;
-    Person* group = createPersonArray(people);
+    Musician m2("guitar", 5);
+    std::cout << "Instrument: " << m2.get_instrument() << ", Experience: " << m2.get_experience() << std::endl;
 
-    for (int i=0; i<people; i++) {
-        cout << group[i].name << ", " <<group[i].age << endl;
-    }
     return 0;
 }
