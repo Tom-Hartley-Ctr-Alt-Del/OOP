@@ -3,7 +3,6 @@
 #include "Player.h"
 #include <string>
 
-
 class Wizard : public Player{
     private:
         int mana;
