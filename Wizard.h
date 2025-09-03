@@ -1,28 +1,17 @@
-Create two subclasses of Player named Wizard and Warrior that 
-inherit player
-
-#ifndef PLAYER_H
-#define PLAYER_H
-
-#include <iostream>
+#ifndef WIZARD_H
+#define WIZARD_H
+#include "Player.h"
 #include <string>
 
-class Players{
+
+class Wizard : public Player{
     private:
-    std::string name;
-    int health;
-    int damage;
-
+        int mana;
     public:
-    Player(string name, int health, int damage);
-
-    int getHealth(int health);
-
-    int setHealth(int health);
-
-    void attack(Player* opponent, int damage);
-
-    void takeDamage(int damage);
+        Wizard(std::string name, int health, int damage, int mana);
+        int getMana()const;
+        void setMana(int newMana);
+        void castSpell(Player* opponent);
 };
 
 #endif
