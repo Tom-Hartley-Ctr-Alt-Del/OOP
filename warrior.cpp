@@ -1,5 +1,5 @@
-#include "Warrior.h"
-#include "Player.h"
+#include "warrior.h"
+#include "player.h"
 #include <iostream>
 #include <string>
 using namespace std;

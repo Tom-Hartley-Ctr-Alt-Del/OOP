@@ -1,5 +1,5 @@
-#include "Wizard.h"
-#include "Player.h"
+#include "wizard.h"
+#include "player.h"
 #include <iostream>
 #include <string>
 using namespace std;

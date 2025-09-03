@@ -1,6 +1,6 @@
 #ifndef WIZARD_H
 #define WIZARD_H
-#include "Player.h"
+#include "player.h"
 #include <string>
 
 class Wizard : public Player{
