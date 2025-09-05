@@ -26,7 +26,7 @@ void ParkingLot::parkVehicle(Vehicle* vehicle) {
 void ParkingLot::unparkVehicle(int ID) {
     for (int i=0; i<currentVehicles; i++) {
         if (vehicles[i]->getID()==ID) {
-            cout << "Please proceed to the exit. " << endl;
+            cout << "Please proceed to the exit." << endl;
             delete vehicles[i];
             for (int j=i; j<currentVehicles-1; j++) {
                 vehicles[j]=vehicles[j+1];
@@ -35,5 +35,5 @@ void ParkingLot::unparkVehicle(int ID) {
             return;
         }
     }
-    cout << "Vehicle not in lot" << endl;
+    cout << "Vehicle not in the lot" << endl;
 }
