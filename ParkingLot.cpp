@@ -18,7 +18,7 @@ void ParkingLot::parkVehicle(Vehicle* vehicle) {
         vehicles[currentVehicles]=vehicle;
         currentVehicles++;
     } else {
-        cout << "Sorry, the car park is full! now " << endl;
+        cout << "The lot is full" << endl;
         return;
     }
 }
@@ -33,5 +33,8 @@ void ParkingLot::unparkVehicle(int ID) {
             }
             currentVehicles--;
                 }
+        else {
+            cout << "Vehicle not in lot" << endl;
+        }
     }
 }
