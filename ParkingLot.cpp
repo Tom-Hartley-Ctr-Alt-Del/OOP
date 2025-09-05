@@ -32,9 +32,8 @@ void ParkingLot::unparkVehicle(int ID) {
                 vehicles[j]=vehicles[j+1];
             }
             currentVehicles--;
-                }
-        else {
-            cout << "Vehicle not in lot" << endl;
+            return;
         }
     }
+    cout << "Vehicle not in lot" << endl;
 }
