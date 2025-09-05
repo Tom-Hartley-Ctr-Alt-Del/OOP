@@ -1,25 +1,50 @@
+#include "Vehicle.h"
+#include "Car.h"
+#include "Motorbike.h"
+#include "Bus.h"
+#include <ctime>
 #include <iostream>
-#include "player.h"
-#include "wizard.h"
-#include "warrior.h"
+#include <string>
 using namespace std;
 
+
 int main() {
-    //Wizard(name, health, damage, mana)
-    Wizard wizard("Gandalf", 100, 20, 50);
-    //Warrior(name, health, damage, weapon)
-    Warrior warrior("Aragorn", 120, 25, "Sword");
-    cout << "Let the battle begin!" << endl;
-    while (wizard.getHealth() > 0 && warrior.getHealth() > 0) {
-        wizard.castSpell(&warrior);
-        if (warrior.getHealth() > 0) {
-            warrior.swingWeapon(&wizard);
+    string userInput;
+    int totalVehicles=0;
+    int carCounter=0;
+    int busCounter=0;
+    int MotorbikeCounter=0;
+    int ID=0;
+
+    cout << "How many vehicles will be entering today? ";
+    cin >> totalVehicles;
+    Vehicle* capacity[totalVehicles];
+
+    for (int i=0; i<totalVehicles; i++) {
+        cout << "What vehicle is enterring now? ";
+        cin >> userInput;
+        if (userInput=="car") {
+            capacity[i]=new Car(ID);
+            carCounter++;
+        } else if (userInput=="bus") {
+            capacity[i]=new Bus(ID);
+            busCounter++;
+        } else if (userInput=="motorbike") {
+            capacity[i]=new Motorbike(ID);
+            MotorbikeCounter++;
+        } else {
+            i=i-1;
+            cout << "Sorry, please enter either 'car', 'motorbike', or 'bus': ";
         }
+        ID++;
+        cout << endl;
     }
-    if (wizard.getHealth() > 0) {
-    cout << wizard.getName() << " wins!" << endl;
-    } else {
-    cout << warrior.getName() << " wins!" << endl;
+    cout << "Thank you for parking your vehicles here! Type 'exit' when you want to leave!" << endl;
+    cin >> userInput;
+    if (userInput=="exit") {
+        for (int j=0; j<totalVehicles; j++) {
+            cout << "Vehicle:" << j << capacity[j]->getID() << " " << capacity[j]->getParkingDuration() << endl;
+        }
     }
     return 0;
 }
