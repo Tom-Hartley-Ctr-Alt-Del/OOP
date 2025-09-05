@@ -41,11 +41,10 @@ int ParkingLot::getMaxParkingDuration() {
     return maxParkingDuration;
 }
 
-int ParkingLot::countOverstayingVehicles() {
-        int maximumTime=getMaxParkingDuration();
+int ParkingLot::countOverstayingVehicles(int maxParkingDuration) {
         int overstayed=0;
         for (int i=0; i<currentVehicles; i++) {
-            if (vehicles[i]->getParkingDuration() > maximumTime) {
+            if (vehicles[i]->getParkingDuration() > maxParkingDuration) {
                 overstayed++;
             }
         }    

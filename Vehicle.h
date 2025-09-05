@@ -12,6 +12,7 @@ class Vehicle {
         int getID();
         std::time_t getTimeOfEntry();
         virtual int getParkingDuration();
+        void setTimeOfEntry(std::time_t newTime);
 };
 
 

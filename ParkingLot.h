@@ -15,7 +15,7 @@ class ParkingLot {
         int getCount();
         void parkVehicle(Vehicle*);
         void unparkVehicle(int);
-        int countOverstayingVehicles();
+        int countOverstayingVehicles(int);
 };
 
 #endif

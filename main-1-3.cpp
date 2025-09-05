@@ -48,7 +48,7 @@ int main() {
     cout << "Enter the ID of the vehicle you want to remove: ";
     cin >> removeID;
     lot.unparkVehicle(removeID);
-    int overstayed=lot.countOverstayingVehicles();
-    cout << overstayed;
+    cout << lot.countOverstayingVehicles(15);
+;
     return 0;
 }
