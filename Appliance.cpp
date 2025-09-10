@@ -18,18 +18,18 @@ void Appliance::turnOff() {
     isOn=false;
 }
 
-int Appliance::get_PowerRating() {
+int Appliance::get_powerRating() {
     return powerRating;
 }
 
-void Appliance::set_PowerRating(int powerRating) {
+void Appliance::set_powerRating(int powerRating) {
     this->powerRating=powerRating;
 }
 
-double Appliance::get_PowerConsumption() {
+double Appliance::get_powerConsumption() {
     return 0.0;
 }
 
-bool Appliance::get_IsOn() {
+bool Appliance::get_isOn() {
     return isOn;
 }

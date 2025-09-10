@@ -11,10 +11,10 @@ class Appliance {
         Appliance(int);
         void turnOn();
         void turnOff();
-        virtual double get_PowerConsumption();
-        int get_PowerRating();
-        void set_PowerRating(int);
-        bool get_IsOn();
+        virtual double get_powerConsumption();
+        int get_powerRating();
+        void set_powerRating(int);
+        bool get_isOn();
 };
 
 #endif

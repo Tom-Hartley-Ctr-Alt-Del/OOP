@@ -21,12 +21,12 @@ House::House(int numAppliances) {
     currentAppliances=0;
 }
 
-int House::get_NumAppliances(){
+int House::get_numAppliances(){
     return numAppliances;
 }
 
 
-int House::get_CurrentAppliances() {
+int House::get_currentAppliances() {
     return currentAppliances;
 }
 
@@ -39,10 +39,10 @@ bool House::addAppliance(Appliance* appliance) {
     return true;
 }
 
-double House::getTotalPowerConsumption() {
+double House::get_totalPowerConsumption() {
     double totalPowerUsage=0;
-    for (int i=0; i<get_CurrentAppliances(); i++) {
-        totalPowerUsage=totalPowerUsage+appliances[i]->get_PowerConsumption();
+    for (int i=0; i<get_currentAppliances(); i++) {
+        totalPowerUsage=totalPowerUsage+appliances[i]->get_powerConsumption();
     }
     return totalPowerUsage;
 }

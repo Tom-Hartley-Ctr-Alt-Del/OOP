@@ -5,9 +5,9 @@ using namespace std;
 
 int main() {
     TV t1(10,9);
-    cout << t1.getPowerConsumption() << endl;
-    cout << t1.getIsOn() << endl;
-    cout << t1.getScreenSize() << endl;
-    cout << t1.getPowerRating();
+    cout << t1.get_powerConsumption() << endl;
+    cout << t1.get_isOn() << endl;
+    cout << t1.get_screenSize() << endl;
+    cout << t1.get_powerRating();
     return 0;
 }
