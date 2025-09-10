@@ -11,9 +11,9 @@ class House: public Appliance {
         House();
         House(int numAppliances);
         bool addAppliance(Appliance* appliance);
-        double getTotalPowerConsumption();
-        int getNumAppliances();
-        int getCurrentAppliances();
+        double get_TotalPowerConsumption();
+        int get_NumAppliances();
+        int get_CurrentAppliances();
 };
 
 #endif

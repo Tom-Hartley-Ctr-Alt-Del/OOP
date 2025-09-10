@@ -16,7 +16,7 @@ int main() {
     h1.addAppliance(t1);
     h1.addAppliance(f2);
     
-    cout << h1.getCurrentAppliances() << endl << h1.getNumAppliances() << endl << h1.getTotalPowerConsumption() << endl;
+    cout << h1.get_CurrentAppliances() << endl << h1.get_NumAppliances() << endl << h1.get_TotalPowerConsumption() << endl;
     cout << "Done" << endl;
     delete f1, f2, a1, t1;
 }
