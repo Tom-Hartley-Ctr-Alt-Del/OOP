@@ -1,4 +1,5 @@
-// Addition.h
+#ifndef ADDITION_H
+#define ADDITION_H
 
 class Addition {
 public:
@@ -6,3 +7,5 @@ public:
         return lhs + rhs;
     }
 };
+
+#endif
